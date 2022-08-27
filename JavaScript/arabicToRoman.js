@@ -50,4 +50,4 @@ return roman;
 
 }
 
-//document.write(convertToRoman(3222));
+document.write(convertToRoman(3222));
