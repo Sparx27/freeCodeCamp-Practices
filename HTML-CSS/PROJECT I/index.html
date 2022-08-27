@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+<head lang="en">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey</title>
+</head>
+
+<body>
+  <header>
+    <h1 id="title">Game's Form</h1>
+    <p id="description"><em>This survey was made to improve, to practice what I've learned.</em></p>
+  </header>
+
+  <!--FORM-->
+  <form id="survey-form">
+    <fieldset>
+      <!--NAME-->
+    <label id="name-label">Your nick or name <input type="text" id="name" placeholder="type your name" required></label>
+    <!--MAIL-->
+    <label id="email-label">Your email <input type="email" id="email" placeholder="only valid email format" required></label>
+    <!--AGE-->
+    <label id="number-label">Your age <input type="number" id="number" min="9" max="120" placeholder="only numbers available" required></label>
+    </fieldset>
+
+    <fieldset id="fieldset2">
+      
+      <select id="dropdown">
+        <option value="">(Choose the best game saga for you)</option>
+        <option value="Metal Gear">Metal Gear</option>
+        <option value="Fallout">Fallout</option>
+        <option value="The Elder Scrolls">The Elder Scrolls</option>
+        <option value="Resident Evil">Resident Evil</option>
+        <option value="God of War">God of War</option>
+        <option value="Battlefield">Battlefield</option>
+        <option value="The Witcher">The Witcher</option>
+        <option value="Grand Theft Auto">Grand Theft Auto</option>
+      </select>
+      
+      <label id="platformlabel">On what platform did you ever played a game?</label>
+      <label class="subopt"><input type="checkbox" class="options" value="cb1">PC</label>
+      <label class="subopt"><input type="checkbox" class="options" value="cb2">XBOX</label>
+      <label class="subopt"><input type="checkbox" class="options" value="cb3">PlayStation</label>
+      <label class="subopt"><input type="checkbox" class="options" value="cb4">Nintendo</label>
+      <label id="platformprefer">Do you prefer playing on PC or Console?</label>
+      <label class="subopt"><input type="radio" class="options" name="pcorconsole" value="r1">I prefer PC</label>
+      <label class="subopt"><input type="radio" class="options" name="pcorconsole" value="r2">I prefer Consoles</label>
+      <label>Send us a message!<textarea rows="8"></textarea></label>
+    </fieldset>
+
+    <input id="submit" type="submit" value="Submit">
+  </form>
+
+</body>
+</html>
