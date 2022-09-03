@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project III</title>
+    <link rel="stylesheet" href="./projectiii.css">
+    <script src="https://kit.fontawesome.com/3ad766ec21.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <div class="header">
+        <div class="part1">
+            <i class="fa-brands fa-css3"></i>
+            <h1>Position elements with CSS</h1>
+        </div>
+        <div class="part2">
+            <p>This documentation belongs to <a id="w3link" href="https://www.w3schools.com" target="_blank">w3school.com</a></p>
+        </div>        
+    </div>
+    <div class="subheader">
+        <p>This documentation belongs to <a id="w3link" href="https://www.w3schools.com" target="_blank">w3school.com</a></p>
+    </div>
+
+    <div class="main">
+
+        <div class="menu">
+            <a href="#display">Display</a>
+            <a href="#position">Position</a>
+            <a href="#zindex">z-index</a>
+            <a href="#flexbox">Flexbox</a>
+            <a href="#grid">Grid</a>
+        </div>
+
+        <div class="content">
+
+                    <h2 id="display">Display</h2>
+            <br>
+            <p>The display property specifies the display behavior (the type of rendering box) of an element.<br><br>
+                In HTML, the default display property value is taken from the HTML specifications or from the browser/user default style sheet. The default value in XML is inline, including SVG elements.
+                </p>
+            <br>
+            <h3>Property Values</h3>
+
+            <ul>
+                <li><b>inline:</b> Displays an element as an inline element (like span). Any height and width properties will have no effect</li>
+                <li><b>block: </b>Displays an element as a block element (like p). It starts on a new line, and takes up the whole width</li>
+                <li><b>contents:</b> Makes the container disappear, making the child elements children of the element the next level up in the DOM</li>
+                <li><b>flex:</b> Displays an element as a block-level flex container</li>
+                <li><b>grid:</b> Displays an element as a block-level grid container</li>
+                <li><b>table:</b> Let the element behave like a table element</li>
+            </ul>
+
+                    <h2 id="position">Position</h2>
+            <br>
+            <p>The position property specifies the type of positioning method used for an element (static, relative, absolute, fixed, or sticky). By default value it has static.</p>
+            <br>
+            <p><u>Note:</u> The sticky value is not supported in Internet Explorer or Edge 15 and earlier versions.</p>
+            <br>
+            <h3>Property Values</h3>
+
+            <ul>
+                <li><b>static:</b> 	Default value. Elements render in order, as they appear in the document flow</li>
+                <li><b>absolute: </b>The element is positioned relative to its first positioned (not static) ancestor element</li>
+                <li><b>fixed:</b> The element is positioned relative to the browser window</li>
+                <li><b>relative:</b> The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position</li>
+                <li><b>sticky:</b> The element is positioned based on the user's scroll position
+                    A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).</li>
+                <li><b>inherit:</b> Inherits this property from its parent element.</li>
+            </ul>
+
+                    <h2 id="zindex">z-index</h3>
+            <br>
+            <p>The z-index property specifies the stack order of an element. It's default value is auto.</p>
+            <br>
+            <p>An element with greater stack order is always in front of an element with a lower stack order.</p>
+            <br>
+            <p><u>Note:</u> z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and flex items (elements that are direct children of display:flex elements).</p>
+            <br>
+            <p><u>Note:</u> If two positioned elements overlap without a z-index specified, the element positioned last in the HTML code will be shown on top.</p>
+            <br>
+            <h3>Property Values</h3>
+
+            <ul>
+                <li><b>auto:</b> Sets the stack order equal to its parents. This is default</li>
+                <li><b>number:</b> Sets the stack order of the element. Negative numbers are allowed</li>
+                <li><b>initial:</b> Sets this property to its default value.</li>
+                <li><b>inherit:</b> Inherits this property from its parent element.</li>
+            </ul>
+
+                    <h2 id="flexbox">Flexbox</h2>
+            <br>
+            <p>The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning.</p>
+            <br>
+            <p>To start using the Flexbox model, you need to first define a flex container.</p>
+            <br>
+            <p>The flex container becomes flexible by setting the display property to flex</p>
+            <br>
+            <h3>The flex container properties are:</h3>
+
+            <ul>
+                <li><b>flex-direction</b></li>
+                <li><b>flex-wrap</b></li>
+                <li><b>flex-flow</b></li>
+                <li><b>justify-content</b></li>
+                <li><b>align-items</b></li>
+                <li><b>align-content</b></li>
+            </ul>
+
+            <h2 id="grid">Grid</h2>
+            <br>
+            <p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.</p>
+            <br>
+            <h3>Grid Elements</h3>
+            <p>A grid layout consists of a parent element, with one or more child elements.</p>
+            <br>
+            <p>An HTML element becomes a grid container when its display property is set to grid or inline-grid.</p>
+            <br>
+            <p>All direct children of the grid container automatically become grid items.</p>
+            <br>
+            <p>The vertical lines of grid items are called columns.</p>
+            <br>
+            <p>The horizontal lines of grid items are called rows.</p>
+            <br>
+            <p>The spaces between each column/row are called gaps.</p>
+            <br>          
+            <p>The lines between columns are called column lines.<br>
+                The lines between rows are called row lines.</p>
+            <br>
+            
+        </div>
+
+    </div>
+
+
+</body>
+</html>
