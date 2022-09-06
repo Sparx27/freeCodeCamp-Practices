@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mimate.uy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Lato&family=Rubik:wght@500&family=Vollkorn:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/3ad766ec21.js" crossorigin="anonymous"></script>
+  <link href="./styles.css" rel="stylesheet">
+</head>
+
+
+<body>
+  
+  <div class="header">
+
+    <div class="logotext">
+      <img id="header-img" src="./imgs/icon.jpg">
+      <h1>mimate.uy</h1>
+    </div>
+
+    <nav id="nav-bar">
+      <ul>
+        <li><a href="#" class="nav-link">Productos</a></li>
+        <li><a href="#" class="nav-link">Envíos</a></li>
+        <li><a href="#" class="nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <nav id="alt-nav">
+    <ul>
+      <li><a href="#" class="nav-link">Productos</a></li>
+      <li><a href="#" class="nav-link">Envíos</a></li>
+      <li><a href="#" class="nav-link">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section class="history">
+      <div class="hheader">
+      <h2>DESDE 1990 EN LA ARTESANIA DE MATES</h2>
+      </div>
+      <div class="hbody">
+        <img src="./imgs/artesano.jpg">
+      <p>Con una larga trayectoria por parte de nuestros artesanos, nos hemos dedicado día a día a la artesanía de productos de calidad, cómodos y de larga duración para que puedan acompañarte vayas a donde vayas por muchos años. Comenzando como un pequeño emprendimiento familiar, a día de hoy nos hemos consolidados como referentes en el mercado uruguayo, teniendo desde nuestros inicios la excelencia como política central en nuestra compañia.</p>
+      </div>
+    </section>
+
+    <section class="products">
+      <h2>Productos estrella</h2>
+      
+      <div class="imagescontainer">
+
+        <figure>
+          <img src="./imgs/mate comun.jpg"
+              alt="mateclasico">
+        
+          <figcaption>Mate clásico</figcaption>
+        </figure>
+
+        <figure>
+          <img src="./imgs/mate con acero.jpg"
+              alt="matehornamental">
+        
+          <figcaption>Mate hornamental</figcaption>
+        </figure>
+
+        <figure>
+          <img src="./imgs/mate imperial.jpg"
+              alt="mateimperial">
+        
+          <figcaption>Mate imperial</figcaption>
+        </figure>
+
+        <figure>
+          <img src="./imgs/mate calabaza.jpg"
+              alt="matecalabaza">
+        
+          <figcaption>Mate calabaza</figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <section class="shipping">
+
+      <div class="s-header">
+        <i class="fa-solid fa-truck-fast"></i>
+        <h3>Envíos</h3>
+      </div>
+
+      <p>Realizamos envíos a todo el país todas las semanas en los días martes y viernes</p>
+    </section>
+
+    <section class="contact">
+
+      <div class="c-part1">
+        <div class="c-header">
+          <i class="fa-solid fa-envelope"></i>
+          <h3>Contacto</h3>
+        </div>
+  
+        <P><i class="fa-solid fa-phone"></i> Llamadas y whatsapps al 098777123</P>
+      </div>
+
+      <hr>
+     
+      <div class="c-part2">
+        <p>Puede escribirnos directamente vía web para que podamos contactarnos y resolverle sus dudas.</p>
+
+        <form action="./submit-url">
+          <fieldset>
+
+            <table>
+
+              <tr>
+                <th><label for="name">Nombre:</label></td>
+                <td><input id="name" type='text' pattern="[a-zA-z]{2,}" required></td>
+              </tr>
+
+              <tr>
+                <th><label for="email">Email:</label></td>
+                <td><input id="email" type="mail" required></td>
+              </tr>
+
+              <tr>
+                <td colspan="2"><textarea></textarea></td>
+                <td></td>
+              </tr>
+
+            </table>
+            
+          </fieldset>
+
+          <input id="submit" type="submit" value="Enviar">
+        </form>  
+      </div>
+   
+    </section>
+
+  </main>
+  
+  <footer>
+    <h1>mimate.uy</h1>
+    <p>- Calidad y buenos precioss</p>
+  </footer>
+
+
+</body>
+
+</html>
