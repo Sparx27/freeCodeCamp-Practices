@@ -1,0 +1,68 @@
+SON 3 METODOS, RELACIONADOS AL PARADIGMA FUNCIONAL
+
+PROG. FUNCIONAL: Los programas comienzan con ciertos datos iniciales
+		     y se les van aplicando funciones para obtener nuevos
+		     valores, PERO SIN MODIFICARLOS DIRECTAMENTE (sin
+		     realizar mutaciones). Importa el qué, el resultado.
+		     Se buscan funciones puras, no tocan ninguna variable
+		     externa, ninguna otra parte del programa.
+
+FUNCIONES DE ORDEN SUPERIOR: Funciones que reciben otra funcion en su
+parametro/s.
+
+Las tres son funciones puras, y no deberian modificar al array original.
+
+Las tres funciones DEBEN trabajar SIN ASINCRONIA.
+
+MAP (o Transform): Uso cuando tengo un arra y quiero obtener un nuevo
+array de otra cosa.
+TRANSFORMA CADA ELEMENTO DE UN ARRAY, UNO A UNO, APLICANDOLES A CADA
+UNO, UNA FUNCION EN BASE AL ELEMENTO EN CUESTION Y SU POSICION EN EL
+ARRAY.
+const numeros = [3, 10, 20, 50];
+const dobles = numeros.map(function (numero) {
+	return numero * 2;
+});
+
+
+FILTER: Va tomando cada elemento de un array y va decidiendo si cada
+uno de ellos, pasa al nuevo array. Si el elemento en cuestion no pasa
+la condicion, entonces es descartado.
+El resultado de filter es un nuevo array, que contiene los elementos
+el array inicial, pero que cumplan condiciones (que devuelvan true).
+
+const productosBaratos = arrayConPrecios.filter(producto => producto.precio < 1000);
+
+OO
+
+const esBarato = producto => producto.precio < 1000;
+const esCaro = producto => !esBarato(producto);
+
+const productosBaratos = productos.filter(esBarato);
+const productosCaros = productos.filter(esCaro);
+
+Para quitar elementos repetidos:
+const numeros = [1, 2, 3, 4, 3, 1];
+const numerosUnicos = numeros.filter( (numero, posicion, numeros) => {
+	return posicion === numeros.indexOf(numero);
+});
+
+
+REDUCE: Una prensa que necesita un array y un valor inicial que se le
+debe indicar. Con cada vuelta de la palanca, opera con el valor que
+va acumulando con cada elemento del array. Tras operar con cada elemento
+del array, el resultado es un unico elemento.
+
+const numeros = [3, 10, 20, 50];
+let total = numeros.reduce( (acumulador, numero) => acumulador + numero, 0(que sera el valor inicial) );
+
+OO
+
+const acumular = (acumulador, numero) => acumulador + numero;
+let total = numeros.reduce(acumular, 0)
+
+*NOTA: El segundo argumento de REDUCE es opcional, si no pongo 0,
+reduce tomara el primer elemento del array como valor inicial.
+
+
+

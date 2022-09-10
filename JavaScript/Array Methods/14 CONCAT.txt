@@ -1,0 +1,11 @@
+Concatenation significa unir elementos de extremo a extremo. 
+
+JavaScript ofrece el método concat para cadenas y arreglos, que funciona 
+de la misma manera. 
+
+Para arreglos, el método es llamado desde un arreglo, un segundo arrelgo es 
+proporcionado como argumento de concat, este se añadirá al final del primer 
+arreglo. Devuelve un nuevo arreglo, sin mutar ninguno de los arreglos 
+originales.
+
+CONCAT PUEDE SUSTITUIR AL METODO PUSH PARA NO MUTAR UN ARREGLO / STRING
